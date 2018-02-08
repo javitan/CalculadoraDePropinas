@@ -5,6 +5,9 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="vertical"
+    android:layout_marginLeft="20dp"
+    android:layout_marginRight="20dp"
+    android:layout_marginTop="20dp"
     tools:context="com.example.javitan.calculadordepropinas.MainActivity">
 
     <LinearLayout
@@ -16,7 +19,10 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:id="@+id/facturaTag"
-            android:text="Factura:"/>
+            android:textStyle="bold"
+            android:textSize="18dp"
+            android:textColor="#000000"
+            android:text="Factura: "/>
 
         <EditText
             android:layout_width="match_parent"
@@ -34,7 +40,10 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:id="@+id/porcentajeTag"
-            android:text="Porcentaje propina:"/>
+            android:textStyle="bold"
+            android:textSize="18dp"
+            android:textColor="#000000"
+            android:text="Porcentaje propina: "/>
 
         <EditText
             android:layout_width="match_parent"
@@ -52,7 +61,10 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:id="@+id/personasTag"
-            android:text="Personas:"/>
+            android:textStyle="bold"
+            android:textSize="18dp"
+            android:textColor="#000000"
+            android:text="Personas: "/>
 
         <EditText
             android:layout_width="match_parent"
@@ -66,32 +78,42 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:orientation="horizontal"
+        android:layout_marginTop="10dp"
         android:layout_gravity="center">
 
         <Button
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:id="@+id/calcular"
+            android:textStyle="bold"
             android:text="Calcular"
+            android:layout_marginRight="10dp"
             android:layout_gravity="center"/>
         <Button
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:id="@+id/resetear"
+            android:textStyle="bold"
             android:text="Resetear"
+            android:layout_marginLeft="10dp"
             android:layout_gravity="center"/>
 
     </LinearLayout>
 
     <LinearLayout
         android:layout_width="wrap_content"
-        android:layout_height="wrap_content">
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginTop="10dp">
 
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:id="@+id/cantidadTag"
-            android:text="Cantidad propina:"/>
+            android:textStyle="bold"
+            android:textSize="18dp"
+            android:textColor="#000000"
+            android:text="Cantidad propina: "/>
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
@@ -101,13 +123,18 @@
 
     <LinearLayout
         android:layout_width="wrap_content"
-        android:layout_height="wrap_content">
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginTop="10dp">
 
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:id="@+id/totalTag"
-            android:text="Total a pagar:"/>
+            android:textStyle="bold"
+            android:textSize="18dp"
+            android:textColor="#000000"
+            android:text="Total a pagar: "/>
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
@@ -117,13 +144,18 @@
 
     <LinearLayout
         android:layout_width="wrap_content"
-        android:layout_height="wrap_content">
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginTop="10dp">
 
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:id="@+id/totalpTag"
-            android:text="Total por persona:"/>
+            android:textStyle="bold"
+            android:textSize="18dp"
+            android:textColor="#000000"
+            android:text="Total por persona: "/>
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
